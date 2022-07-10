@@ -1,7 +1,7 @@
-import { Box, Button, Grid, Link, Typography, Container, styled } from '@mui/material'
+import { Box, Grid, Link, Typography, styled } from '@mui/material'
 
 import React from 'react'
-import { CnCard, CnCardActionArea, CnCardActions, CnCardContent, CnCardMedia } from '../../../styles/card/Card'
+import { CnCard, CnCardActionArea, CnCardContent, CnCardMedia } from '../../../styles/card/Card'
 const StyledTypography = styled(Typography)({
     textDecoration: 'none',
     "&:hover": {
