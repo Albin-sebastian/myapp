@@ -1,4 +1,4 @@
-import { Typography, Box, Button, Grid, styled, AppBar, Toolbar, Card, CardMedia, CardContent } from '@mui/material'
+import { Typography, Box, Button, Grid, styled, Card, CardMedia, CardContent } from '@mui/material'
 import React from 'react'
 import { BannerBox } from '../../styles/home'
 import VerticalTabs from './VerticalTab';
@@ -9,7 +9,7 @@ import {
     FiCardMedia
 } from "./FullImageCard";
 
-import ScrollToSlide from "./ScrollToSlide";
+//import ScrollToSlide from "./ScrollToSlide";
 import { Footer } from '../footer/Footer';
 
 
@@ -28,24 +28,24 @@ const CardButton = styled(Button)({
     },
 });
 
-const StyledTypography = styled(Typography)({
+// const StyledTypography = styled(Typography)({
 
-    "&:hover": {
-        TextDecoration: 'none'
-    },
+//     "&:hover": {
+//         TextDecoration: 'none'
+//     },
 
-});
+// });
 
-const StyledButton = styled(Button)({
+// const StyledButton = styled(Button)({
 
-    color: "white",
-    variant: "text",
-    textTransform: "none",
-    "&:active": {},
-    "&:focus": {
-        border: "1px dashed black",
-    },
-});
+//     color: "white",
+//     variant: "text",
+//     textTransform: "none",
+//     "&:active": {},
+//     "&:focus": {
+//         border: "1px dashed black",
+//     },
+// });
 export const Home = () => {
     return (
         <>
