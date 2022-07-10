@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Container, CssBaseline, ThemeProvider } from "@mui/material";
+import { useEffect } from "react";
+import Appbar from "./components/appbar/Appbar";
+// import Navbar from "./components/Navbar";
+import { theme } from "./styles/Theme";
 function App() {
+  useEffect(() => {
+    document.title = "Azure app";
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Appbar />
+      {/* <Container maxWidth="xl" sx={{ backgroundColor: "white" }}>
+        <Appbar />
+      </Container> */}
+    </ThemeProvider>
   );
 }
 
 export default App;
+
